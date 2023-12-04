@@ -18,7 +18,7 @@ fun fetchInputData(day: Int = 1): String {
             "cookie",
             "session=$cookie"
         )
-        .uri(URI.create("https://adventofcode.com/2022/day/$day/input"))
+        .uri(URI.create("https://adventofcode.com/2023/day/$day/input"))
         .build()
     val response = client.send(request, HttpResponse.BodyHandlers.ofString())
     return response.body()
